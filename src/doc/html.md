@@ -37,7 +37,7 @@ and should be specified as early as possible (before any content that could be
 controlled by an attacker, such as a `<title>` element) in order to avoid a
 potential [encoding-related security
 issue](https://code.google.com/archive/p/doctype-mirror/wikis/ArticleUtf7.wiki)
-in Internet Explorer
+in Internet Explorer.
 
 ### Meta Description
 
@@ -97,11 +97,11 @@ Boilerplate site. In addition to the required fields we add `og:description` to
 describe the site in more detail.
 
 ``` html
-<meta name="og:url" content="https://html5boilerplate.com/">
-<meta name="og:title" content="HTML5 ★ BOILERPLATE">
-<meta name="og:type" content="website">
-<meta name="og:description" content="The web’s most popular front-end template which helps you build fast, robust, and adaptable web apps or sites.">
-<meta name="og:image" content="https://html5boilerplate.com/icon.png">
+<meta property="og:url" content="https://html5boilerplate.com/">
+<meta property="og:title" content="HTML5 ★ BOILERPLATE">
+<meta property="og:type" content="website">
+<meta property="og:description" content="The web’s most popular front-end template which helps you build fast, robust, and adaptable web apps or sites.">
+<meta property="og:image" content="https://html5boilerplate.com/icon.png">
 ```
 
 ### Web App Manifest
@@ -165,7 +165,7 @@ using a polyfill CDN service, like [polyfill.io](https://polyfill.io/v3/), just 
 it before the other scripts in the bottom of the page:
 
 ```html
-    <script src="js/vendor/modernizr-3.10.0.min.js"></script>
+    <script src="js/vendor/modernizr-3.11.4.min.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js"></script>
     <script src="js/app.js"></script>
 </body>
@@ -203,7 +203,7 @@ to the `index.html` manually.
 To load jQuery from a CDN with a local fallback you can use the following:
 
 ``` html
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.5.1.min.js"><\/script>')</script>
 ```
 
